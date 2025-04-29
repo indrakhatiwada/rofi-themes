@@ -1,0 +1,83 @@
+/************************ Modern Orange Rofi Theme ************************/
+configuration {
+    font:                        "Fira Code Medium 12";
+    show-icons:                 true;
+    icon-theme:                "Papirus-Orange";  
+}
+
+* {
+    /* Color Scheme */
+    background-color:       #1a1a1aFF;
+    background-alt:         #2a2a2aFF;
+    foreground:             #e0e0e0FF;
+    selected:               #FFA500FF;  
+    border-color:           #663300FF; 
+    active:                #4a3a2aFF;  
+    urgent:                #FF3300FF;   
+
+    /* Main Layout */
+    width:                       50%;
+    lines:                      8;
+    padding:                    20px;
+    border-radius:              12px;
+    border:                    2px ;
+    border-color:              @border-color;
+    scrollbar-width:           8px;
+}
+
+window {
+    background-color: @background-color;
+    border:           1px;
+    border-color:     @foreground;
+    border-radius:   @border-radius;
+    padding:          20px;
+}
+
+inputbar {
+    children:        [prompt, entry];
+    background-color:     @background-alt;
+    padding:        8px;
+    margin:         0px 0px 10px 0px;
+    border-radius:  6px;
+}
+
+prompt {
+    text-color:     @selected;
+}
+
+entry {
+    text-color:     @foreground;
+    placeholder:   "Search...";
+}
+
+listview {
+    padding:        8px 0px;
+    spacing:        8px;
+    dynamic:       true;
+}
+
+element {
+    background-color:    @background-alt;
+    text-color:    @foreground;
+    padding:       8px 12px;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color:    @selected;
+    text-color:    #ffffffff;  // Dark text on orange
+}
+
+element-text {
+    text-color:    inherit;
+}
+
+element-icon {
+    size:          1.2em;
+}
+
+scrollbar {
+    handle-width:  8px;
+    handle-color:  @selected;
+    border-radius: 4px;
+}
