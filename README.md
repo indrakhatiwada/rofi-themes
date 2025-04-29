@@ -24,7 +24,7 @@ This repository contains a collection of dark themes for Rofi.
     ```bash
     ./install.sh
     ```
-    This script will copy the theme files to your Rofi configuration directory (`~/.config/rofi/themes/`) and apply the `modern-daark` theme by default.
+    This script will copy the theme files to your Rofi configuration directory (`~/.config/rofi/themes/`) and apply selected theme by default.
 
 ## Usage
 
